@@ -1,0 +1,21 @@
+<div class="listUserContainer" ng-controller="userController">
+  <div class="container">
+    <h2>List User</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Create</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="user in users">
+          <td>{{ $index }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{ user.createdAt }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

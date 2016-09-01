@@ -29,10 +29,11 @@
     -->
 
     <!--STYLES-->
+    <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
 
-  <body>
+  <body ng-app="weatherApp" ng-controller="mainController">
     <%- body %>
 
 
@@ -59,6 +60,7 @@
     -->
 
     <!--TEMPLATES-->
+    
     <!--TEMPLATES END-->
 
 
@@ -86,6 +88,22 @@
     -->
 
     <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/dependencies/jquery.js"></script>
+    <script src="/js/dependencies/bootstrap.js"></script>
+    <script src="/js/dependencies/lodash.js"></script>
+    <script src="/js/dependencies/angular.js"></script>
+    <script src="/js/dependencies/angular-route.js"></script>
+    <script src="/js/dependencies/angular-sanitize.js"></script>
+    <script src="/js/dependencies/angular-simple-logger.js"></script>
+    <script src="/js/dependencies/angular-google-maps.js"></script>
+    <script src="/js/app.module.js"></script>
+    <script src="/js/constants/WeatherConstant.js"></script>
+    <script src="/js/constants/WeatherUrl.js"></script>
+    <script src="/js/controllers/MainController.js"></script>
+    <script src="/js/controllers/MapController.js"></script>
+    <script src="/js/controllers/UserController.js"></script>
+    <script src="/js/services/UserService.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>

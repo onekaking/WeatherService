@@ -28,6 +28,27 @@ module.exports = function(grunt) {
         cwd: './assets',
         src: ['**/*.!(coffee|less)'],
         dest: '.tmp/public'
+      },
+      {
+        expand: true,
+        cwd: './bower_components/',
+        flatten: true,
+        src: ['bootstrap/dist/js/bootstrap.js',
+              'jquery/dist/jquery.js',
+              'lodash/lodash.js',
+              'angular/angular.js',
+              'angular-route/angular-route.js',
+              'angular-sanitize/angular-sanitize.js',
+              'angular-simple-logger/dist/angular-simple-logger.js',
+              'angular-google-maps/dist/angular-google-maps.js'],
+        dest: '.tmp/public/js/dependencies/'
+      },
+      {
+        expand: true,
+        cwd: './bower_components/',
+        flatten: true,
+        src: ['bootstrap/dist/fonts/*', 'font-awesome/fonts/*'],
+        dest: '.tmp/public/fonts/'
       }]
     },
     build: {

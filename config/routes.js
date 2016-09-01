@@ -31,10 +31,30 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
+  'GET /login': {
+    controller: 'AuthController',
+    action: 'login'
+  },
 
-  '/': {
-    view: 'homepage'
-  }
+  'GET /register': {
+    controller: 'AuthController',
+    action: 'register'
+  },
+
+  'POST /register': {
+    controller: 'AuthController',
+    action: 'createUser'
+  },
+
+  'POST /login': {
+    controller: 'AuthController',
+    action: 'process'
+  },
+
+  '/logout': {
+    controller: 'AuthController',
+    action: 'logout'
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +65,13 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+
+  'GET /member': {
+    view: 'user/listUser'
+  },
+
+  '/': {
+    view: 'map/currentMap'
+  }
 
 };

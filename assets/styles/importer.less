@@ -13,8 +13,9 @@
  * always omit, customize, or replace this behavior with SASS, SCSS,
  * or any other Grunt tasks you like.)
  */
-
-
+@fa-font-path: "bower_components/font-awesome/fonts/";
+@import 'bower_components/font-awesome/less/font-awesome.less';
+@import 'bower_components/bootstrap/less/bootstrap.less';
 
 // For example:
 //
@@ -28,3 +29,9 @@
 // @import 'pages/signup.less';
 //
 // etc.
+
+@import '_variables.less';
+@import '_mixins.less';
+@import '_fonts.less';
+@import '_components.less';
+@import 'main.less';

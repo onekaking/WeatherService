@@ -33,5 +33,10 @@
     "url": "git://github.com/anonymous node/sails user/WeatherService.git"
   },
   "author": "anonymous node/sails user",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "grunt-bower": "^0.21.2",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  }
 }
